@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg_body);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0px 57px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0px;
+  background-color: var(--bg_default);
+}
+
+.title {
+  font-size: 15px;
+  color: var(--brand-primary);
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 5px;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--lines-color);
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 7px 11px;
+  background-color: var(--bg_default);
+  cursor: pointer;
+}
+
+ion-icon {
+  margin-right: 5px;
+}
+
+header {
+  width: 100%;
+  height: 115px;
+  position: relative;
+  background-color: var(--bg_default);
+}
+
+.blue-triangle,
+.green-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 68px solid transparent;
+}
+
+.blue-triangle {
+  border-left: 90vw solid var(--brand-primary);
+  border-right: 50px solid transparent;
+}
+
+.green-triangle {
+  border-right: calc(100vw - 50px) solid var(--brand-secondary);
+  border-left: 50px solid transparent;
+}
+
+.content {
+  z-index: 2;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  top: 40%;
+}
+
+.content-header {
+  color: var(--brand-secondary);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content-paragraph {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--body-text);
+}
+
+/* search bar */
+.searchBar {
+  display: flex;
+  background-color: var(--bg_default);
+  box-shadow: 1px 1px 6px 1px var(--lines-color);
+  padding: 0px 0.6rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-top: 19px;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 93%;
+  height: 47px;
+}
+
+.search input {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  font-size: 16px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.arrangingCoursesType {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  border-left: 1.5px solid var(--lines-color);
+  padding: 3.5px 0px;
+  gap: 3px;
+  width: 100%;
+  padding-left: 15px;
+  align-items: stretch;
+}
+
+.options select {
+  border: none;
+  outline: none;
+}
+
+.options label {
+  font-size: 12px;
+  padding-left: 4px;
+}
+
+.options select:active {
+  border: none;
+}
+
+/* topics title */
+
+.topicsTitle {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.topics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 33px;
+
+}
+
+.topicCard {
+  width: 18%;
+  border-radius: 10px 10px 5px 5px;
+  background-color: var(--bg_default);
+  box-shadow: 1px 1px 6px 1px var(--lines-color);
+}
+
+.topicCard img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.topicCard .cardInfo {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topicCard .cardInfo .cardDescription p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.topicCard .cardInfo p {
+  font-size: 13px;
+}
+
+.topicCard .cardInfo .topicAuthor {
+  font-size: 12px;
+  color: var(--body-text)
+}
+
+.topicCard .stars {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+/* .stars{
+  padding: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+} */
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg_body);
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* Style the heart icon */
+.red-heart {
+  color: red;
+  /* Change icon color */
+  font-size: 24px;
+  /* Adjust icon size */
+  margin: 0 5px;
+  /* Add spacing around the icon */
+}
