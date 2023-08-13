@@ -5,7 +5,7 @@
 
 body {
   background-color: var(--bg_body);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .container {
@@ -166,7 +166,7 @@ header {
 
 .topics {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 33px;
 
@@ -219,7 +219,6 @@ header {
 
 
 /* Footer */
-
 .footer {
   display: flex;
   justify-content: center;
@@ -236,12 +235,9 @@ header {
 }
 
 
-/* Style the heart icon */
+/* ion icon heart */
 .red-heart {
   color: red;
-  /* Change icon color */
   font-size: 24px;
-  /* Adjust icon size */
   margin: 0 5px;
-  /* Add spacing around the icon */
 }
