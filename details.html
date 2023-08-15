@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="variables.css" /> -->
+
+    <!-- styles -->
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,700&display=swap"
+        rel="stylesheet">
+
+    <!-- title  -->
+    <title>Wep Courses</title>
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <div class="nav-bar">
+        <h1 class="details-title container">Web Topics</h1>
+        <div class="container">
+            <nav class="nav">
+                <button class="icon-button">
+                    <ion-icon name="moon-outline" slot="start"></ion-icon>
+                    Dark Mode
+                </button>
+                <button class="icon-button">
+                    <ion-icon name="heart-outline" slot="start"></ion-icon>
+                    Favoruites
+                </button>
+            </nav>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <div class="green-triangle"></div>
+        <div class="blue-triangle"></div>
+        <div class="welcome">
+            <div>
+                <h1 class="welcome-header">Welcome to our website!</h1>
+                <p class="brief-desc">We have a new design that's fresh, modern, new, and easy to use.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="favoruite-card">
+        <img src="Logos/javascript.jpg" alt="javascript" />
+        <div class="favoruite-info">
+            <p><strong>HTML by <a href="#">Sarah Smith</a></strong></p>
+            <div class="fav">
+                <div class="box">
+                    <p>Intrested about this topic?</p>
+                    <div class="add-fav">
+                        <button id="fav-button">Add to Favourites <ion-icon name="heart-outline"
+                                class="icon fav-heart"></ion-icon></button>
+                    </div>
+                </div>
+                <p id="unlimited">Unlimited Credits</p>
+            </div>
+        </div>
+    </div>
+
+    <article class="article">
+        <div class="article-desc details-container">
+            <div>
+                <p id="type">Web Development Languages</p>
+                <h2><strong>HTML</strong></h2>
+            </div>
+            <div class="stars">
+                <ion-icon class="rate-star" name="star"></ion-icon>
+                <ion-icon class="rate-star" name="star"></ion-icon>
+                <ion-icon class="rate-star" name="star"></ion-icon>
+                <ion-icon class="rate-star" name="star-half"></ion-icon>
+                <ion-icon class="rate-star" name="star-outline"></ion-icon>
+            </div>
+            <div class="topic-desc">
+                <p>HTML (Hypertext Markup Language) is the standured markup language for creating web pages. HTML
+                    describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the
+                    browser how to display the content.</p>
+            </div>
+        </div>
+    </article>
+
+    <main class="main details-container">
+        <h2 id="sub-topics">HTML Sub Topics</h2>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML syntax and structure</p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML elements and attributes</p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML forms and input elements</p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML elements and attributes</p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML forms and input elements</p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML syntax and structure</p>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- footer -->
+    <footer class="details-footer">
+        <!-- <p>Developed with <ion-icon name="heart-outline" class="icon red-heart"></ion-icon> © 2023</p> -->
+        <div class="copyright">
+            <p>Developed with</p> <ion-icon class="icon red-heart" name="heart"></ion-icon>
+            <p> © 2023</p>
+        </div>
+    </footer>
+
+</body>
