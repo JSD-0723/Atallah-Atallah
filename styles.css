@@ -9,9 +9,10 @@ body {
 }
 
 .container {
-  margin: 0px 57px;
+  margin: 0px 4%;
 }
 
+/* nav-bar */
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -52,40 +53,52 @@ ion-icon {
   margin-right: 6px;
 }
 
+/* header */
 .header {
   width: 100%;
   height: 114px;
-  position: relative;
   background-color: var(--bg_default);
+  position: relative;
+}
+
+.triangles {
+  /* width: 100%; */
+  height: 68px;
+  position: relative;
+  overflow: hidden;
 }
 
 .blue-triangle,
 .green-triangle {
+  height: 100%;
   position: absolute;
-  width: 0;
-  height: 0;
-  border-bottom: 68px solid transparent;
+  top: 0;
+  width: 90%;
 }
 
 .blue-triangle {
-  border-left: 90vw solid var(--brand-primary);
-  border-right: 50px solid transparent;
+  background-image: linear-gradient(to right, var(--brand-primary), var(--brand-secondary));
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+  left: 0;
 }
 
 .green-triangle {
-  border-right: 1440px solid var(--brand-secondary);
-  /* border-left: 50px solid transparent; */
+  background-color: var(--brand-secondary);
+  clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+  right: 0;
 }
 
 .welcome {
-  z-index: 2;
-  position: relative;
-  margin: auto;
-  display: flex;
+  /* z-index: 2;
+  position: absolute;
   flex-direction: column;
-  align-items: center;
-  height: 100%;
-  top: 40%;
+  top: 40%; */
+  /* height: 100%; */
+  /* width: 100%; */
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .welcome-header {
@@ -95,7 +108,7 @@ ion-icon {
 }
 
 .brief-desc {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--body-text);
 }
@@ -115,7 +128,7 @@ ion-icon {
 .search {
   display: flex;
   align-items: center;
-  width: 93%;
+  width: 95%;
   height: 47px;
 }
 
@@ -130,7 +143,7 @@ ion-icon {
   outline: none;
 }
 
-.arrangingCoursesType {
+.type-selector {
   display: flex;
   width: 35%;
   justify-content: space-around;
@@ -143,13 +156,14 @@ ion-icon {
   padding: 3.5px 0px;
   gap: 3px;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 10px;
   align-items: stretch;
 }
 
 .options select {
   border: none;
   outline: none;
+  font-size: 15px;
 }
 
 .options label {
@@ -163,7 +177,6 @@ ion-icon {
 
 
 /* topics title */
-
 .topicsTitle {
   font-size: 24px;
   margin-bottom: 30px;
@@ -171,15 +184,14 @@ ion-icon {
 }
 
 .topics {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 33px;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
 }
 
+/* cards */
 .topicCard {
-  width: 18%;
+  width: 100%;
   border-radius: 10px 10px 5px 5px;
   background-color: var(--bg_default);
   box-shadow: 1px 1px 6px 1px var(--lines-color);
@@ -187,6 +199,7 @@ ion-icon {
 
 .topicCard img {
   width: 100%;
+  height: 50%;
   border-radius: 10px 10px 0px 0px;
 }
 
@@ -206,9 +219,13 @@ ion-icon {
   font-weight: 700;
 }
 
+.topicCard .cardInfo .cardDescription .course-name {
+  font-size: 15px;
+}
+
 .topicCard .cardInfo .topicAuthor {
   font-size: 12px;
-  color: var(--body-text)
+  color: var(--body-text);
 }
 
 .topicCard .stars {
@@ -253,9 +270,189 @@ ion-icon {
   fill: var(--heart-color);
 }
 
+/* Media query smaller than 786 */
+@media (max-width: 768px) {
+
+  .icon-button {
+    padding: 4px 8px;
+  }
+
+  .icon-button .text {
+    font-size: 0px;
+  }
+
+  .icon-button .nav-icon {
+    margin: 0px;
+  }
+
+  .triangles {
+    height: 25%;
+  }
+
+  .welcome {
+    margin: 5px 15px;
+  }
+
+  .brief-desc {
+    font-size: 14px;
+  }
+
+  /* .topics {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+
+  .topicCard {
+    height: 265px;
+  }
+
+  .cardInfo .stars {
+    margin-top: 15px;
+  } */
+
+  .search {
+    display: flex;
+    align-items: center;
+    width: 93%;
+    height: 35px;
+    margin: 7px;
+  }
+
+  .searchBar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  /* .options {
+    margin-left: 0px;
+  } */
+
+  /* .type-selector {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  } */
+
+  .type-selector {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-top: 1px solid var(--lines-color);
+    padding: 0px 10px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 6px;
+    gap: 0px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .options label {
+    font-size: 11px;
+    /* padding-left: 4px; */
+  }
+
+  .options:first-child {
+    border-left: 1 solid var(--lines-color);
+    padding-right: 10px;
+  }
+
+}
+
+/* Media query for between 769px - 999px */
+@media only screen and (min-width: 769px) and (max-width: 999px) {
+
+  .icon-button {
+    padding: 7px 11px;
+  }
+
+  .icon-button .text {
+    font-size: 14px;
+  }
+
+  .icon-button .nav-icon {
+    margin-right: 6px;
+  }
+
+  .triangles {
+    height: 68px;
+  }
+
+  .welcome {
+    margin-top: -20px;
+  }
+
+  .brief-desc {
+    font-size: 15px;
+  }
+
+  /* .topics {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 33px;
+  }
+
+  .topicCard {
+    height: auto;
+  }
+
+  .cardInfo .stars {
+    margin-top: 25px;
+  } */
+
+}
+
+/* Media query between 1000px - 1250px */
+@media (min-width: 1000px) and (max-width: 1250px) {
+
+  .icon-button {
+    padding: 7px 11px;
+  }
+
+  .icon-button .text {
+    font-size: 14px;
+  }
+
+  .icon-button .nav-icon {
+    margin-right: 6px;
+  }
+
+  .triangles {
+    height: 68px;
+  }
+
+  .welcome {
+    margin-top: -20px;
+  }
+
+  .brief-desc {
+    font-size: 15px;
+  }
+
+
+  /* .topics {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 33px;
+  }
+
+  .topicCard {
+    height: auto;
+  }
+
+  .cardInfo .stars {
+    margin-top: 25px;
+  } */
+
+}
+
+
+/* ************************************************************************************************************ */
+
 
 /* details page */
-
 .details-container {
   margin: 0px 278px;
 }
@@ -336,8 +533,6 @@ ion-icon {
   flex-wrap: wrap;
   align-items: center;
 }
-
-.box {}
 
 #fav-button {
   display: flex;

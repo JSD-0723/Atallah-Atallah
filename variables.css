@@ -1,3 +1,4 @@
+/* White Mode */
 :root {
     --brand-primary: #0768AC;
     --brand-secondary: #03C180;
@@ -6,5 +7,5 @@
     --lines-color: #DDDDDD;
     --body-text: #333333;
     --heart-color: #DC143C;
-    --gold : #ffa600;
+    --gold: #ffa600;
 }

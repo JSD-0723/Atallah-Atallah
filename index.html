@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="stylesheet" href="variables.css" /> -->
 
   <!-- styles -->
   <link rel="stylesheet" href="variables.css" />
@@ -21,41 +20,44 @@
 </head>
 
 <body>
-  <!-- nav-bar -->
+  <!-- Nav Bar -->
   <div class="nav-bar">
     <h1 class="title container">Web Topics</h1>
     <div class="container">
       <nav class="nav">
         <button class="icon-button">
-          <ion-icon name="moon-outline" slot="start"></ion-icon>
-          Dark Mode
+          <ion-icon class="nav-icon" name="moon-outline" slot="start"></ion-icon>
+          <span class="text">Dark Mode</span>
         </button>
         <button class="icon-button">
-          <ion-icon name="heart-outline" slot="start"></ion-icon>
-          Favoruites
+          <ion-icon class="nav-icon" name="heart-outline" slot="start"></ion-icon>
+          <span class="text">Favoruites</span>
         </button>
       </nav>
     </div>
   </div>
 
-  <!-- header -->
+  <!-- Header -->
   <header class="header">
-    <div class="green-triangle"></div>
-    <div class="blue-triangle"></div>
+    <div class="triangles">
+      <div class="green-triangle"></div>
+      <div class="blue-triangle"></div>
+    </div>
     <div class="welcome">
       <div>
         <h1 class="welcome-header">Welcome to our website!</h1>
-        <p class="brief-desc">We have a new design that's fresh, modern, new, and easy to use.</p>
+        <p class="brief-desc">We have a new design that's fresh, modern, and easy to use.</p>
       </div>
     </div>
   </header>
 
+  <!-- Search Bar -->
   <div class="searchBar container">
     <div class="search">
       <ion-icon name="search"></ion-icon>
       <input type="search" name="search" id="search" placeholder="Search the website..." />
     </div>
-    <div class="arrangingCoursesType">
+    <div class="type-selector">
       <div class="options">
         <label for="sortOptions"> Sort by: </label>
         <select name="courses" id="sortOptions">
@@ -75,15 +77,17 @@
     </div>
   </div>
 
+  <!-- Count -->
   <h1 class="topicsTitle container"><strong>"24" Web Topics Found</strong></h1>
 
+  <!-- Cards -->
   <div class="topics container">
     <div class="topicCard">
       <img src="Logos/html.png" alt="HTML" />
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>HTML</strong></p>
+          <p class="course-name"><strong>HTML</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -102,7 +106,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>JavaScript</strong></p>
+          <p class="course-name"><strong>JavaScript</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -121,7 +125,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Node js</strong></p>
+          <p class="course-name"><strong>Node js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -140,7 +144,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Express js</strong></p>
+          <p class="course-name"><strong>Express js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -159,7 +163,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>HTML</strong></p>
+          <p class="course-name"><strong>HTML</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" class="star" name="star"></ion-icon>
@@ -178,7 +182,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>JavaScript</strong></p>
+          <p class="course-name"><strong>JavaScript</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -197,7 +201,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Node js</strong></p>
+          <p class="course-name"><strong>Node js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -216,7 +220,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Express js</strong></p>
+          <p class="course-name"><strong>Express js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -235,7 +239,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>HTML</strong></p>
+          <p class="course-name"><strong>HTML</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" class="star" name="star"></ion-icon>
@@ -254,7 +258,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>JavaScript</strong></p>
+          <p class="course-name"><strong>JavaScript</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -273,7 +277,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Node js</strong></p>
+          <p class="course-name"><strong>Node js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -292,7 +296,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Express js</strong></p>
+          <p class="course-name"><strong>Express js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -311,7 +315,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>HTML</strong></p>
+          <p class="course-name"><strong>HTML</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" class="star" name="star"></ion-icon>
@@ -330,7 +334,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>JavaScript</strong></p>
+          <p class="course-name"><strong>JavaScript</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -349,7 +353,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Node js</strong></p>
+          <p class="course-name"><strong>Node js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -368,7 +372,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Express js</strong></p>
+          <p class="course-name"><strong>Express js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -387,7 +391,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>HTML</strong></p>
+          <p class="course-name"><strong>HTML</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" class="star" name="star"></ion-icon>
@@ -406,7 +410,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>JavaScript</strong></p>
+          <p class="course-name"><strong>JavaScript</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -425,7 +429,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Node js</strong></p>
+          <p class="course-name"><strong>Node js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -444,7 +448,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Express js</strong></p>
+          <p class="course-name"><strong>Express js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -463,7 +467,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>HTML</strong></p>
+          <p class="course-name"><strong>HTML</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" class="star" name="star"></ion-icon>
@@ -482,7 +486,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>JavaScript</strong></p>
+          <p class="course-name"><strong>JavaScript</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -501,7 +505,7 @@
       <div class="cardInfo">
         <div class="cardDescription">
           <p>Web Development Languages</p>
-          <p><strong>Node js</strong></p>
+          <p class="course-name"><strong>Node js</strong></p>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -515,11 +519,10 @@
         </div>
       </div>
     </div>
-
   </div>
 
+  <!-- Footer -->
   <footer class="home-footer">
-    <!-- <p>Developed with <ion-icon name="heart-outline" class="icon red-heart"></ion-icon> © 2023</p> -->
     <div class="copyright">
       <p>Developed with</p> <ion-icon class="icon red-heart" name="heart"></ion-icon>
       <p> © 2023</p>
