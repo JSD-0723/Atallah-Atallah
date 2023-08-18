@@ -7,7 +7,8 @@
 
   <!-- styles -->
   <link rel="stylesheet" href="variables.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/home.css" />
 
   <!-- open sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,25 +21,25 @@
 </head>
 
 <body>
-  <!-- Nav Bar -->
-  <div class="nav-bar">
-    <h1 class="title container">Web Topics</h1>
-    <div class="container">
-      <nav class="nav">
-        <button class="icon-button">
-          <ion-icon class="nav-icon" name="moon-outline" slot="start"></ion-icon>
-          <span class="text">Dark Mode</span>
-        </button>
-        <button class="icon-button">
-          <ion-icon class="nav-icon" name="heart-outline" slot="start"></ion-icon>
-          <span class="text">Favoruites</span>
-        </button>
-      </nav>
-    </div>
-  </div>
-
   <!-- Header -->
   <header class="header">
+    <nav class="nav-bar container">
+      <a href="#" class="title">Web Topics</a>
+      <div class="nav-buttons">
+        <button class="icon-button">
+          <ion-icon class="nav-icon" name="moon-outline"></ion-icon>
+          <span class="nav-button-text">Dark Mode</span>
+        </button>
+        <button class="icon-button">
+          <ion-icon class="nav-icon" name="heart-outline"></ion-icon>
+          <span class="nav-button-text">Favourites</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
     <div class="triangles">
       <div class="green-triangle"></div>
       <div class="blue-triangle"></div>
@@ -46,29 +47,29 @@
     <div class="welcome">
       <div>
         <h1 class="welcome-header">Welcome to our website!</h1>
-        <p class="brief-desc">We have a new design that's fresh, modern, and easy to use.</p>
+        <h2 class="brief-desc">We have a new design that's fresh, modern, and easy to use.</h2>
       </div>
     </div>
-  </header>
+  </section>
 
   <!-- Search Bar -->
-  <div class="searchBar container">
+  <div class="search-bar container">
     <div class="search">
-      <ion-icon name="search"></ion-icon>
-      <input type="search" name="search" id="search" placeholder="Search the website..." />
+      <ion-icon class="search-icon" name="search"></ion-icon>
+      <input type="search" name="search" id="search" placeholder="Search the website..." /> <!--inherit font-->
     </div>
     <div class="type-selector">
       <div class="options">
-        <label for="sortOptions"> Sort by: </label>
-        <select name="courses" id="sortOptions">
+        <label for="sortOptions"> Sort by: </label> <!---->
+        <select name="courses" id="sort-options"> <!--select.sort-options-->
           <option>Default</option>
           <option value="A-Z">A-Z</option>
           <option value="Z-A">Z-A</option>
         </select>
       </div>
       <div class="options">
-        <label for="filterOptions"> Filter by: </label>
-        <select name="courses" id="filterOptions">
+        <label for="filterOptions"> Filter by: </label> <!---->
+        <select name="courses" id="filter-options"> <!--select.filter-options-->
           <option>Default</option>
           <option value="Author">Author</option>
           <option value="Rating">Rating</option>
@@ -78,16 +79,22 @@
   </div>
 
   <!-- Count -->
-  <h1 class="topicsTitle container"><strong>"24" Web Topics Found</strong></h1>
+  <h2 class="courses-number container">"24" Web Topics Found</h2> <!--cahnge the heading 1??-->
 
   <!-- Cards -->
-  <div class="topics container">
-    <div class="topicCard">
+  <div class="courses container">
+    <a href="#" class="course-card">
       <img src="Logos/html.png" alt="HTML" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>HTML</strong></p>
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb
+            Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb
+            Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb
+            Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb Development Languages</h4>
+          <h4 class="course-name">Web Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb
+            Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb
+            Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb
+            Development LanguagesWeb Development LanguagesWeb Development LanguagesWeb Development Languages</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -96,112 +103,129 @@
           <ion-icon class="rate-star" name="star-half"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
-        </div>
+        <p class="course-author">Author: Emily Chen</p>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/javascript.jpg" alt="JavaScript" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>JavaScript</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/nodejs.webp" alt="nodejs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Node js</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+        </div>
+        <div class="course-author">
+          <p>Author: John Wich</p>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/expressjs.webp" alt="expressjs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Express js</h4>
+        </div>
+        <div class="stars">
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star-half"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
+        <div class="course-author">
           <p>Author: Sarah Smith</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/nodejs.webp" alt="Node js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Node js</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/javascript.jpg" alt="javascript" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">JavaScript</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star-half"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: John Wick</p>
+        <div class="course-author">
+          <p>Author: Noah Steven</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/expressjs.webp" alt="Express js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Express js</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
+    </a>
+    <a href="#" class="course-card">
       <img src="Logos/html.png" alt="HTML" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>HTML</strong></p>
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">HTML</h4>
         </div>
         <div class="stars">
-          <ion-icon class="rate-star" class="star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+        </div>
+        <div class="course-author">
+          <p>Author: Emily Chen</p>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/nodejs.webp" alt="nodejs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Node js</h4>
+        </div>
+        <div class="stars">
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+        </div>
+        <div class="course-author">
+          <p>Author: John Wich</p>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/expressjs.webp" alt="expressjs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Express js</h4>
+        </div>
+        <div class="stars">
+          <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star-half"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/javascript.jpg" alt="JavaScript" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>JavaScript</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-half"></ion-icon>
-        </div>
-        <div class="topicAuthor">
+        <div class="course-author">
           <p>Author: Sarah Smith</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/nodejs.webp" alt="Node js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Node js</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/css.webp" alt="css" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">CSS</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -210,93 +234,93 @@
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: John Wick</p>
+        <div class="course-author">
+          <p>Author: Jane Clarck</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/expressjs.webp" alt="Express js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Express js</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/javascript.jpg" alt="javascript" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">JavaScript</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+          <ion-icon class="rate-star" name="star-half"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
+        <div class="course-author">
+          <p>Author: Noah Steven</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
+    </a>
+    <a href="#" class="course-card">
       <img src="Logos/html.png" alt="HTML" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>HTML</strong></p>
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">HTML</h4>
         </div>
         <div class="stars">
-          <ion-icon class="rate-star" class="star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star-half"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
+        <div class="course-author">
           <p>Author: Emily Chen</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/javascript.jpg" alt="JavaScript" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>JavaScript</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/nodejs.webp" alt="nodejs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Node js</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+        </div>
+        <div class="course-author">
+          <p>Author: John Wich</p>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/expressjs.webp" alt="expressjs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Express js</h4>
+        </div>
+        <div class="stars">
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star-half"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
+        <div class="course-author">
           <p>Author: Sarah Smith</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/nodejs.webp" alt="Node js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Node js</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: John Wick</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/expressjs.webp" alt="Express js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Express js</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/javascript.jpg" alt="javascript" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">JavaScript</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -305,74 +329,74 @@
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
+        <div class="course-author">
+          <p>Author: Noah Steven</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
+    </a>
+    <a href="#" class="course-card">
       <img src="Logos/html.png" alt="HTML" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>HTML</strong></p>
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">HTML</h4>
         </div>
         <div class="stars">
-          <ion-icon class="rate-star" class="star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
+        </div>
+        <div class="course-author">
+          <p>Author: Emily Chen</p>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/nodejs.webp" alt="nodejs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Node js</h4>
+        </div>
+        <div class="stars">
+          <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star-half"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
+        <div class="course-author">
+          <p>Author: John Wich</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/javascript.jpg" alt="JavaScript" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>JavaScript</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/expressjs.webp" alt="expressjs" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">Express js</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
           <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-half"></ion-icon>
+          <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
+        <div class="course-author">
           <p>Author: Sarah Smith</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/nodejs.webp" alt="Node js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Node js</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: John Wick</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/expressjs.webp" alt="Express js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Express js</strong></p>
+    </a>
+    <a href="#" class="course-card">
+      <img src="Logos/css.webp" alt="css" />
+      <div class="card-info">
+        <div class="card-description">
+          <h4 class="web-course">Web Development Languages</h4>
+          <h4 class="course-name">CSS</h4>
         </div>
         <div class="stars">
           <ion-icon class="rate-star" name="star"></ion-icon>
@@ -381,145 +405,13 @@
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
           <ion-icon class="rate-star" name="star-outline"></ion-icon>
         </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
+        <div class="course-author">
+          <p>Author: Jane Clarck</p>
         </div>
       </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/html.png" alt="HTML" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>HTML</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" class="star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-half"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/javascript.jpg" alt="JavaScript" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>JavaScript</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-half"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: Sarah Smith</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/nodejs.webp" alt="Node js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Node js</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: John Wick</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/expressjs.webp" alt="Express js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Express js</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/html.png" alt="HTML" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>HTML</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" class="star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-half"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: Emily Chen</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/javascript.jpg" alt="JavaScript" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>JavaScript</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-half"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: Sarah Smith</p>
-        </div>
-      </div>
-    </div>
-    <div class="topicCard">
-      <img src="Logos/nodejs.webp" alt="Node js" />
-      <div class="cardInfo">
-        <div class="cardDescription">
-          <p>Web Development Languages</p>
-          <p class="course-name"><strong>Node js</strong></p>
-        </div>
-        <div class="stars">
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star"></ion-icon>
-          <ion-icon class="rate-star" name="star-outline"></ion-icon>
-        </div>
-        <div class="topicAuthor">
-          <p>Author: John Wick</p>
-        </div>
-      </div>
-    </div>
+    </a>
   </div>
+
 
   <!-- Footer -->
   <footer class="home-footer">

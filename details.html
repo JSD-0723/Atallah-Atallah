@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="variables.css" /> -->
 
     <!-- styles -->
     <link rel="stylesheet" href="variables.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/details.css" />
 
     <!-- open sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,25 +22,25 @@
 </head>
 
 <body>
-    <!-- Nav-Bar -->
-    <div class="nav-bar">
-        <h1 class="details-title container">Web Topics</h1>
-        <div class="container">
-            <nav class="nav">
-                <button class="icon-button">
-                    <ion-icon name="moon-outline" slot="start"></ion-icon>
-                    Dark Mode
-                </button>
-                <button class="icon-button">
-                    <ion-icon name="heart-outline" slot="start"></ion-icon>
-                    Favoruites
-                </button>
-            </nav>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="header">
+        <nav class="nav-bar container">
+            <a href="#" class="details-title">Web Topics</a>
+            <div class="nav-buttons">
+                <button class="icon-button">
+                    <ion-icon class="nav-icon" name="moon-outline"></ion-icon>
+                    <span class="nav-button-text">Dark Mode</span>
+                </button>
+                <button class="icon-button">
+                    <ion-icon class="nav-icon" name="heart-outline"></ion-icon>
+                    <span class="nav-button-text">Favourites</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome-section">
         <div class="triangles">
             <div class="green-triangle"></div>
             <div class="blue-triangle"></div>
@@ -48,19 +48,19 @@
         <div class="welcome">
             <div>
                 <h1 class="welcome-header">Welcome to our website!</h1>
-                <p class="brief-desc">We have a new design that's fresh, modern, and easy to use.</p>
+                <h2 class="brief-desc">We have a new design that's fresh, modern, and easy to use.</h2>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Favourite Crad -->
     <div class="favoruite-card">
         <img src="Logos/javascript.jpg" alt="javascript" />
         <div class="favoruite-info">
-            <p><strong>HTML by <a href="#">Sarah Smith</a></strong></p>
+            <p id="card-author"><strong>HTML by <a href="#">Sarah Smith</a></strong></p>
             <div class="fav">
                 <div class="box">
-                    <p>Intrested about this topic?</p>
+                    <p id="fav-paragraph">Intrested about this topic?</p>
                     <div class="add-fav">
                         <button id="fav-button">Add to Favourites <ion-icon name="heart-outline"
                                 class="icon fav-heart"></ion-icon></button>
@@ -73,7 +73,7 @@
 
     <!-- Card Description -->
     <article class="article">
-        <div class="article-desc details-container">
+        <div class="article-desc details-container horizantal-container">
             <div>
                 <p id="type">Web Development Languages</p>
                 <h2><strong>HTML</strong></h2>
@@ -86,22 +86,30 @@
                 <ion-icon class="rate-star" name="star-outline"></ion-icon>
             </div>
             <div class="topic-desc">
-                <p>HTML (Hypertext Markup Language) is the standured markup language for creating web pages. HTML
-                    describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the
+                <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages. HTML
+                    describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell
+                    the
                     browser how to display the content.</p>
             </div>
         </div>
     </article>
 
-    <!-- Card Details -->
-    <main class="main details-container">
+    <!-- Card Main Details -->
+    <main class="main details-container horizantal-container">
         <h2 id="sub-topics">HTML Sub Topics</h2>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML syntax and structure</p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML elements and attributes</p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML forms and input elements</p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML elements and attributes</p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML forms and input elements</p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> HTML syntax and structure</p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
+                syntax and structureHTML
+                syntax and structure HTML syntax and structure HTML syntax and structure</span></p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
+                elements and attributes</span></p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
+                forms and input elements</span></p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
+                elements and attributes</span></p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
+                forms and input elements</span></p>
+        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
+                syntax and structure</span></p>
     </main>
 
     <!-- ion-icon -->
