@@ -8,6 +8,8 @@
     left: 0;
     width: 100%;
     z-index: 1;
+    /* height: 20.7vh;
+    overflow-x: scroll; */
     /* visibility: hidden; */
 }
 
@@ -19,7 +21,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, .095fr));
     gap: 15px;
-    overflow-x: auto;
+    height: 14.9vh;
+    overflow-x: scroll;
     width: 100%;
     box-sizing: border-box;
 }
@@ -37,10 +40,6 @@
     margin-bottom: 18px;
     text-decoration: none;
     cursor: pointer;
-}
-
-.favourite-card:last-child {
-    margin-right: 0;
 }
 
 .favourite-card img {
