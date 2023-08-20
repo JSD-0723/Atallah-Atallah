@@ -43,6 +43,7 @@ body {
 }
 
 .icon-button {
+  color: var(--body-text);
   font-weight: 400;
   font-size: 14.5px;
   display: flex;

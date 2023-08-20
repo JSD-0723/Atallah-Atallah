@@ -8,12 +8,14 @@
     left: 0;
     width: 100%;
     z-index: 1;
+    /* display: none; */
     /* height: 20.7vh;
     overflow-x: scroll; */
-    /* visibility: hidden; */
+
 }
 
 .favourite-topics {
+    color: var(--body-text);
     margin: 15px 0px;
 }
 

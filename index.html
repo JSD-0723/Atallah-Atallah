@@ -25,13 +25,13 @@
   <!-- Header -->
   <header class="header">
     <nav class="nav-bar container">
-      <a href="#" class="title">Web Topics</a>
+      <a href="index.html" class="title">Web Topics</a>
       <div class="nav-buttons">
-        <button class="icon-button">
-          <ion-icon class="nav-icon" name="moon-outline"></ion-icon>
+        <button id="dark-mode" class="icon-button">
+          <ion-icon id="moon" class="nav-icon" name="moon-outline"></ion-icon>
           <span class="nav-button-text">Dark Mode</span>
         </button>
-        <button class="icon-button">
+        <button onclick="toggle()" class="icon-button">
           <ion-icon class="nav-icon" name="heart-outline"></ion-icon>
           <span class="nav-button-text">Favourites</span>
         </button>
@@ -499,7 +499,7 @@
   </section>
 
   <!-- Favourites Bar -->
-  <Section class="favourites-bar">
+  <Section id="hide-fav-bar" class="favourites-bar">
     <div class="container">
       <h4 class="favourite-topics"> My Favourite Topics</h4>
       <div class="favourite-cards-container">
@@ -672,6 +672,11 @@
   <!-- ion-icon -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="actions.js"></script>
+
+  </script>
+
 </body>
 
 </html>

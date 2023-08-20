@@ -17,7 +17,7 @@
 }
 
 .article {
-    background-color: var(--body-text);
+    background-color: var(--body-text-details);
     width: 100%;
     height: 280px;
     color: var(--bg_default);
@@ -25,6 +25,11 @@
 
 .article-desc {
     padding: 32px 0px;
+}
+
+/* Exclude .article-desc from Dark Mode */
+.dark-theme .article-desc {
+    color: var(--body-text);
 }
 
 #type {
@@ -46,9 +51,8 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 22vw;
-    border: 1px solid var(--bg_default);
-    background-color: var(--bg_default);
+    width: 22.2vw;
+    border: 3px solid var(--bg_default-details);
     box-shadow: 1px 1px 6px 1px var(--lines-color);
     margin-top: 30px;
     z-index: 10;
@@ -63,6 +67,8 @@
 
 .favoruite-card .favoruite-info {
     padding: 1.3vw 1.1vw;
+    background-color: var(--bg_default-details);
+    margin-bottom: -0.3vh;
 }
 
 .fav {
@@ -75,6 +81,7 @@
     padding-bottom: 0.6vw;
     flex-wrap: wrap;
     align-items: center;
+    border-color: var(--lines-color-details);
 }
 
 .box {
@@ -86,11 +93,11 @@
     align-items: center;
     justify-content: center;
     font-size: 1.45vw;
-    padding: 0.9vw 1.4vw;
+    padding: 0.9vw 1.3vw;
     border: none;
     background-color: var(--brand-secondary);
-    color: var(--bg_body);
-    margin-top: 0.8vw;
+    color: var(--bg_default-details);
+    margin-top: 0.7vw;
     margin-bottom: 1px
 }
 
@@ -103,19 +110,18 @@
 }
 
 #fav-paragraph {
-    font-size: 1.16vw;
-    color: var(--body-text);
+    font-size: 1.13vw;
 }
 
 #unlimited {
     font-size: .9vw;
-    color: var(--body-text);
+    color: var(--body-text-details);
 }
 
 .fav-heart {
     margin-left: 0.7vw;
     font-size: 2.2vw;
-    color: var(--bg_default);
+    color: var(--bg_default-details);
 }
 
 .main {
@@ -124,6 +130,7 @@
     background: var(--bg_default);
     margin-top: 31px;
     margin-bottom: 31px;
+    color: var(--body-text);
     /* width: 37%; */
 }
 
@@ -163,10 +170,18 @@
     width: 100%;
     margin-bottom: 200px;
     font-weight: 700;
+    color: var(--body-text);
 }
 
 .details-footer .copyright {
     margin-top: -80px;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    .article-desc {
+        color: var(--body-text);
+    }
 }
 
 
