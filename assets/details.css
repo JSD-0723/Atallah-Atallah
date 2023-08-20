@@ -316,7 +316,7 @@
 
     #fav-paragraph {
         font-size: 16.8px;
-        color: var(--body-text);
+        color: var(--body-text-details);
     }
 
     #unlimited {
