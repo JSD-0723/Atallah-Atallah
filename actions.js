@@ -15,9 +15,9 @@ darkMode.onclick = function () {
 function toggle() {
     var favCardBar = document.getElementById('hide-fav-bar')
 
-    if (favCardBar.style.display === 'none') {
-        favCardBar.style.display = 'block';
-    } else {
+    if (favCardBar.style.display === 'block') {
         favCardBar.style.display = 'none';
+    } else {
+        favCardBar.style.display = 'block';
     }
 }   

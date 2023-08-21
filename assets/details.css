@@ -20,17 +20,17 @@
     background-color: var(--body-text-details);
     width: 100%;
     height: 280px;
-    color: var(--bg_default);
+    color: var(--bg_default-details);
 }
 
 .article-desc {
     padding: 32px 0px;
 }
 
-/* Exclude .article-desc from Dark Mode */
+/* Exclude .article-desc from Dark Mode
 .dark-theme .article-desc {
     color: var(--body-text);
-}
+} */
 
 #type {
     color: var(--brand-secondary);
@@ -178,12 +178,12 @@
     margin-top: -80px;
 }
 
-/* Dark mode styles */
+/* Dark mode styles
 @media (prefers-color-scheme: dark) {
     .article-desc {
         color: var(--body-text);
     }
-}
+} */
 
 
 /* Media query between 1000px - 1250px */
