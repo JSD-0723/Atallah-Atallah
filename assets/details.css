@@ -44,7 +44,7 @@
     box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, .3);
     z-index: 10;
     right: 0;
-    top: 12%;
+    top: 32px;
 }
 
 .favoruite-card img {
@@ -233,6 +233,7 @@
     .favoruite-card {
         position: relative;
         width: 260px;
+        top: 0;
     }
 
     .favoruite-card img {
