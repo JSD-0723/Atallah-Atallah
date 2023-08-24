@@ -55,30 +55,28 @@
         </div>
     </section>
 
-    <!-- Favourite Crad -->
-    <div class="favoruite-card">
-        <img src="Logos/javascript.jpg" alt="javascript" />
-        <div class="favoruite-info">
-            <p id="card-author"><strong>HTML by <a href="#">Sarah Smith</a></strong></p>
-            <div class="fav">
-                <div class="box">
-                    <p id="fav-paragraph">Interested about this topic?</p>
-                    <div class="add-fav">
-                        <button id="fav-button">Add to Favourites <ion-icon name="heart-outline"
-                                class="icon fav-heart"></ion-icon></button>
-                    </div>
-                </div>
-                <p id="unlimited">Unlimited Credits</p>
-            </div>
-        </div>
-    </div>
-
     <!-- Card Description -->
     <article class="article">
-        <div class="article-desc details-container horizantal-container">
+        <div class="article-desc details-container">
+            <!-- Favourite Crad -->
+            <div class="favoruite-card">
+                <img src="Logos/javascript.jpg" alt="javascript" />
+                <div class="favoruite-info">
+                    <p class="card-author"><strong>HTML <span>by</span> <a class="author-name" href="#">Sarah
+                                Smith</a></strong></p>
+                    <div class="fav">
+                        <p class="fav-paragraph">Interested about this topic?</p>
+                        <div class="add-fav">
+                            <button class="fav-button">Add to Favourites <ion-icon name="heart-outline"
+                                    class="icon fav-heart"></ion-icon></button>
+                        </div>
+                        <p class="unlimited">Unlimited Credits</p>
+                    </div>
+                </div>
+            </div>
             <div>
-                <p id="type">Web Development Languages</p>
-                <h2><strong>HTML</strong></h2>
+                <p class="type">Web Development Languages</p>
+                <h1><strong>HTML</strong></h1>
             </div>
             <div class="stars">
                 <ion-icon class="rate-star" name="star"></ion-icon>
@@ -90,29 +88,34 @@
             <div class="topic-desc">
                 <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages. HTML
                     describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell
-                    the
-                    browser how to display the content.</p>
+                    the browser how to display the content. HTML (Hypertext Markup Language) is the standard markup
+                    language for creating web pages. HTML describes the structure of a Web page.
+                    HTML describes the structure of a Web page.</p>
             </div>
+
         </div>
     </article>
 
-    <!-- Card Main Details -->
-    <main class="main details-container horizantal-container">
-        <h2 id="sub-topics">HTML Sub Topics</h2>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
-                syntax and structureHTML
-                syntax and structure HTML syntax and structure HTML syntax and structure</span></p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
-                elements and attributes</span></p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
-                forms and input elements</span></p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
-                elements and attributes</span></p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
-                forms and input elements</span></p>
-        <p><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span class="details-main-desc">HTML
-                syntax and structure</span></p>
-    </main>
+    <section class="details-container">
+        <!-- Card Main Details -->
+        <main class="main ">
+            <h2>HTML Sub Topics</h2>
+            <ul>
+                <li><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span
+                        class="details-main-desc">HTML syntax and structure</span></li>
+                <li><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span
+                        class="details-main-desc">HTML elements and attributes</span></li>
+                <li><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span
+                        class="details-main-desc">HTML forms and input elements</span></li>
+                <li><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span
+                        class="details-main-desc">HTML elements and attributes</span></li>
+                <li><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span
+                        class="details-main-desc">HTML forms and input elements</span></li>
+                <li><ion-icon name="checkmark-circle-outline" class="icon check"></ion-icon> <span
+                        class="details-main-desc">HTML syntax and structure</span></li>
+            </ul>
+        </main>
+    </section>
 
     <!-- Favourites Bar -->
     <Section id="hide-fav-bar" class="favourites-bar">
@@ -123,7 +126,7 @@
                     <img src="Logos/react.webp" alt="reactjs">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">React</h5>
+                            <h5 class="fav-card-name">React</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
@@ -136,7 +139,7 @@
                     <img src="Logos/cloud.jpeg" alt="cloud-computing">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">Cloud Computing</h5>
+                            <h5 class="fav-card-name">Cloud Computing</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
@@ -149,7 +152,7 @@
                     <img src="Logos/react.webp" alt="reactjs">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">React</h5>
+                            <h5 class="fav-card-name">React</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
@@ -162,59 +165,7 @@
                     <img src="Logos/cloud.jpeg" alt="cloud-computing">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">Cloud Computing</h5>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
-                        </div>
-                    </section>
-                </a>
-                <a href="details.html" class="favourite-card">
-                    <img src="Logos/react.webp" alt="reactjs">
-                    <section class="fav-card-footer">
-                        <div class="star">
-                            <h5 id="fav-card-name">React</h5>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
-                        </div>
-                    </section>
-                </a>
-                <a href="details.html" class="favourite-card">
-                    <img src="Logos/cloud.jpeg" alt="cloud-computing">
-                    <section class="fav-card-footer">
-                        <div class="star">
-                            <h5 id="fav-card-name">Cloud Computing</h5>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
-                        </div>
-                    </section>
-                </a>
-                <a href="details.html" class="favourite-card">
-                    <img src="Logos/react.webp" alt="reactjs">
-                    <section class="fav-card-footer">
-                        <div class="star">
-                            <h5 id="fav-card-name">React</h5>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star"></ion-icon>
-                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
-                        </div>
-                    </section>
-                </a>
-                <a href="details.html" class="favourite-card">
-                    <img src="Logos/cloud.jpeg" alt="cloud-computing">
-                    <section class="fav-card-footer">
-                        <div class="star">
-                            <h5 id="fav-card-name">Cloud Computing</h5>
+                            <h5 class="fav-card-name">Cloud Computing</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
@@ -226,7 +177,7 @@
                     <img src="Logos/react.webp" alt="reactjs">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">React</h5>
+                            <h5 class="fav-card-name">React</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
@@ -239,7 +190,7 @@
                     <img src="Logos/cloud.jpeg" alt="cloud-computing">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">Cloud Computing</h5>
+                            <h5 class="fav-card-name">Cloud Computing</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
@@ -251,7 +202,7 @@
                     <img src="Logos/react.webp" alt="reactjs">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">React</h5>
+                            <h5 class="fav-card-name">React</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
@@ -264,7 +215,57 @@
                     <img src="Logos/cloud.jpeg" alt="cloud-computing">
                     <section class="fav-card-footer">
                         <div class="star">
-                            <h5 id="fav-card-name">Cloud Computing</h5>
+                            <h5 class="fav-card-name">Cloud Computing</h5>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
+                        </div>
+                    </section>
+                </a><a href="details.html" class="favourite-card">
+                    <img src="Logos/react.webp" alt="reactjs">
+                    <section class="fav-card-footer">
+                        <div class="star">
+                            <h5 class="fav-card-name">React</h5>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
+                        </div>
+                    </section>
+                </a>
+                <a href="details.html" class="favourite-card">
+                    <img src="Logos/cloud.jpeg" alt="cloud-computing">
+                    <section class="fav-card-footer">
+                        <div class="star">
+                            <h5 class="fav-card-name">Cloud Computing</h5>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
+                        </div>
+                    </section>
+                </a><a href="details.html" class="favourite-card">
+                    <img src="Logos/react.webp" alt="reactjs">
+                    <section class="fav-card-footer">
+                        <div class="star">
+                            <h5 class="fav-card-name">React</h5>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star"></ion-icon>
+                            <ion-icon class="rate-star" name="star-outline"></ion-icon>
+                        </div>
+                    </section>
+                </a>
+                <a href="details.html" class="favourite-card">
+                    <img src="Logos/cloud.jpeg" alt="cloud-computing">
+                    <section class="fav-card-footer">
+                        <div class="star">
+                            <h5 class="fav-card-name">Cloud Computing</h5>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>
                             <ion-icon class="rate-star" name="star"></ion-icon>

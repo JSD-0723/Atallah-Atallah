@@ -33,7 +33,7 @@
   padding: 0.6rem;
   border: none;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .search input:focus {
@@ -69,7 +69,7 @@
   border: none;
   outline: none;
   font-size: 15px;
-  margin-left: -8px;
+  /* margin-left: -8px; */
 }
 
 .options select:active {
@@ -163,8 +163,6 @@
 
 .course-card .stars {
   display: flex;
-  margin-bottom: 5px;
-  padding-left: 0px;
 }
 
 .course-card .stars .rate-star {

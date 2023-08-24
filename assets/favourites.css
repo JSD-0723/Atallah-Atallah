@@ -20,24 +20,14 @@
 }
 
 .favourite-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, .095fr));
+    display: flex;
+    flex-wrap: nowrap;
     gap: 15px;
-    height: 14.9vh;
-    overflow-x: scroll;
+    overflow-x: auto;
     width: 100%;
     box-sizing: border-box;
 }
 
-.favourite-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, .095fr));
-    gap: 15px;
-    height: 14.9vh;
-    overflow-x: scroll;
-    width: 100%;
-    box-sizing: border-box;
-}
 
 /* Customizing the fav-cards-bar scrollbar*/
 .favourite-cards-container::-webkit-scrollbar {
@@ -91,7 +81,7 @@
     margin-block: 5px;
 }
 
-#fav-card-name {
+.fav-card-name {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
